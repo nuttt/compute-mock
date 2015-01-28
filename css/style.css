@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
 
+body {
+  font-family: 'Roboto Slab', serif;
+}
 .left {
   float: left;
 }
@@ -8,14 +12,19 @@
   float: right;
 }
 
+section {
+  padding: 10px 0;
+}
+
 nav {
   position: fixed;
   top: 0;
   width: 100%;
   background: rgba(0,0,0,1);
   color: #ccc;
-  padding: 10px 15px;
-  height: 35px;
+  /*padding: 10px 15px;*/
+  /*height: 35px;*/
+  height: 55px;
   line-height: 35px;
   z-index: 9999;
 }
@@ -23,20 +32,45 @@ nav {
 nav #nav-logo {
   height: 25px;
   display: inline-block;
-  margin: 5px 0;
+  margin: 15px 15px;
 }
 
 nav #nav-menu {
   margin: 0 40px;
+  padding: 0;
+  height: 55px;
 }
 
 nav #nav-menu li {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 30px;
+  height: 55px;
+  line-height: 55px;
+
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 nav #nav-menu li a {
-  color: #ccc;
+  color: #eee;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+
+
+}
+
+nav #nav-menu li:hover{
+  background-color: #e74c3c;
+
+  -moz-transform: skewX(-15deg);
+-webkit-transform: skewX(-15deg);
+-o-transform: skewX(-15deg);
+-ms-transform: skewX(-15deg);
+transform: skewX(-15deg);
 }
 
 nav::after {
@@ -138,19 +172,33 @@ video#bgvid {
 
 #detail {
   text-align: center;
+  background: #ccc url("../images/light_noise_diagonal.png") repeat;
 }
 
 #detail h3 {
-  width: 500px;
+  width: 700px;
   margin: 50px auto 0;
-  font-size: 32px;
+  font-size: 50px;
+  line-height: 70px;
+  color: #333;
+  /*font-family: 'Lobster', cursive;*/
+  text-shadow: 1px 1px 0 #ffffff;
 }
 
-#detail div {
+#detail #feature-wrapper {
+  font-family: 'Roboto Slab', serif;
+}
+
+#detail .feature {
   display: inline-block;
   width: 250px;
   margin: 50px 20px;
   vertical-align: top;
+}
+
+#detail .feature h4 {
+  font-size: 30px;
+  margin: 20px 0 10px;
 }
 
 #detail img {
