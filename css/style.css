@@ -27,11 +27,16 @@ nav #nav-logo {
 }
 
 nav #nav-menu {
-  margin: 0;
+  margin: 0 40px;
 }
+
 nav #nav-menu li {
   display: inline-block;
   padding: 0 10px;
+}
+
+nav #nav-menu li a {
+  color: #ccc;
 }
 
 nav::after {
@@ -41,7 +46,7 @@ nav::after {
 }
 
 #hero {
-  height: 600px;
+  height: 520px;
   /*background: url("../images/hero-background.jpg");*/
   -webkit-background-size: 100%;
   background-size: 100%;
@@ -134,16 +139,40 @@ video#bgvid {
 #detail {
   text-align: center;
 }
+
+#detail h3 {
+  width: 500px;
+  margin: 50px auto 0;
+  font-size: 32px;
+}
+
 #detail div {
   display: inline-block;
-  width: 300px;
+  width: 250px;
+  margin: 50px 20px;
+  vertical-align: top;
 }
 
 #detail img {
-  border-radius: 100px;
-  -moz-border-radius: 100px;
-  -khtml-border-radius: 100px;
-  -webkit-border-radius: 100px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -webkit-border-radius: 50%;
   width: 200px;
   height: 200px;
+}
+
+footer {
+  height: 60px;
+  background: #222;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  font-family: 'Roboto Slab', serif;
+  color: #ccc;
+  padding: 30px;
+}
+
+footer h2
+{
+  text-align: center;
 }
